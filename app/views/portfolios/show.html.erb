@@ -6,3 +6,9 @@
 <p><%= @portfolio_item.body %></p>
 
 <%= @portfolio_item.inspect %>
+
+<h2>Technologies Used:</h2>
+
+<% @portfolio_item.technologies.each do |portfolio_item| %>
+<p><%= portfolio_item.name %></p>
+<% end %>
