@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    LoveconversionsViewTool::Renderer.copyright 'Andrew Rhee', 'All right reserved'
+  end
 end
