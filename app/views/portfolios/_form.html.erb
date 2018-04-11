@@ -10,7 +10,20 @@
         <%= form.label :subtitle %>
         <%= form.text_field :subtitle, id: :portfolio_subtitle, class: 'form-control' %>
       </div>
+
+      <div class="form-group">
+        <label class="btn btn-primary">
+          Upload a main image file <%= form.file_field :main_image, style: "display:none;" %>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label class="btn btn-primary">
+          Upload a thumb image file <%= form.file_field :thumb_image, style: "display:none;" %>
+        </label>
+      </div>
     </div>
+
 
     <div class="col-md-6">
       <div class="form-group">
@@ -18,6 +31,7 @@
         <%= form.text_area :body, id: :portfolio_body, class: 'form-control', rows: 13 %>
       </div>
     </div>
+
   
   <hr>
     <div class="col-md-12">
